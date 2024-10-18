@@ -10,6 +10,23 @@
 
 }
 
+a{
+    text-decoration: none;
+}
+
+/* button */
+
+.btn{
+    height: 40px;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+}
+.btn:hover{
+    background-color: #0056b3;
+}
 
 /* index.blade.php */
 
@@ -20,34 +37,44 @@
     margin-left: 80px; 
     padding: 20px;
 }
+.main2{
+    width: 95%;
+    display: flex;
+    margin-left: 80px; 
+    padding: 40px;
+    justify-content: center;
+
+}
 
 form h1{
     text-align: center;
 }
 
-.emerg-form{
-    
-    width: 50vh;
-    height: auto;
-}
-
-.emerg-form form {
+.general{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
 }
+.doc{
+    display: flex;
+    flex-direction: column;
+}
 
-.main .descripcion{
+
+.descripcion{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     row-gap: 0.5rem;
-    width: 320px;
+    width: 360px;
+    height: 300px;
 }
 
-.main .paciente{
+.paciente{
+    width: 320px;
+    height: 170px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -57,9 +84,8 @@ form h1{
 }
 
 
-
-.emerg-form input[type="number"]{
-    width: 5rem;
+ input[type="number"]{
+    width: 4rem;
 }
 
 #detalle{
@@ -70,20 +96,37 @@ form h1{
     width: 100%;
 }
 
-
-/* registro.blade.php */
-
-.cont-registro{
-    width: 100%;
+.pacientes{
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
-    justify-content: flex-start;
+    row-gap: 0.5rem;
 }
 
 
+/* registro.blade.php */
 
 
+.registro{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5rem;
+    width: 280px;
+}
+.registro-datos{
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    row-gap: 1rem;
+}
 
 /* doctor.blade.php */
 
@@ -119,7 +162,7 @@ form h1{
 .doctor {
     background-color: #FFFFFF;
     height: 260px;
-    width: 180px;
+    width: 200px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     display: flex;
     flex-direction: column;
@@ -140,59 +183,6 @@ form h1{
     display: inline-block;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

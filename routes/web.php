@@ -15,15 +15,15 @@ Route::post('/login', [AuthController::class, 'login']);
 
 Route::get('/index', function () {
     return view('index'); //
-});
+})->name('index');
 
 Route::get('/doctor', function () {
     return view('doctor'); //
-});
+})->name('doctor');
 
 Route::get('/registro', function () {
     return view('registro'); //
-});
+})->name('registro');
 
 
 

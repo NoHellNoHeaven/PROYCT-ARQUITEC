@@ -9,9 +9,9 @@
 <body>
     <aside class="sidebar">
         <div class="icons-top">
-            <a href="#"><img class="ic"  src="{{ asset('img/doctor.png') }}" alt=""></a>
-            <a href="#"><img class="ic" src="{{ asset('img/personas.png') }}" alt=""></a>
-            <a href="#"><img class="ic" src="{{ asset('img/list.png') }}" alt=""></a>
+            <a href="{{ route('index') }}"><img class="ic" src="{{ asset('img/cruz.png') }}" alt=""></a>
+            <a href="{{ route('doctor') }}"><img class="ic"  src="{{ asset('img/doctor.png') }}" alt=""></a>
+            <a href="{{ route('registro') }}"><img class="ic" src="{{ asset('img/list.png') }}" alt=""></a>
         </div>
         <div class="icons-bottom">
             
