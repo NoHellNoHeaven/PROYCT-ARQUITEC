@@ -3,10 +3,37 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+
+
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard');
+});
+//aaaaaaaaaaaa
+Route::post('/login', [AuthController::class, 'login']);
+
+
+Route::get('/index', function () {
+    return view('index'); //
 });
 
+Route::get('/doctor', function () {
+    return view('doctor'); //
+});
+
+Route::get('/registro', function () {
+    return view('registro'); //
+});
+
+
+
+
+
+
+
+
+
+//aaaaaaaaa
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
