@@ -1,8 +1,9 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 
 
 
@@ -10,6 +11,9 @@ Route::get('/', function () {
     return view('dashboard');
 });
 //aaaaaaaaaaaa
+Auth::routes();
+
+
 Route::post('/login', [AuthController::class, 'login']);
 
 
